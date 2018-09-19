@@ -1,6 +1,6 @@
-let express = require('express');
-let todoController = require('./controllers/todoController');
-let app = express();
+const express = require('express');
+const todoController = require('./controllers/todoController');
+const app = express();
 
 //Set up template engine
 app.set('view engine','ejs');
