@@ -1,16 +1,16 @@
-let bodyParser = require('body-parser');
-let mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 //Connect to mongoDB
 mongoose.connect('mongodb://test:testm1@ds259732.mlab.com:59732/todo', {useNewUrlParser: true});
 
 //Create a schema
-let todoSchema = new mongoose.Schema({
+const todoSchema = new mongoose.Schema({
   item: 'string'
 });
 
 //Create a model type
-let Todo = mongoose.model('Todo', todoSchema);
+const Todo = mongoose.model('Todo', todoSchema);
 
 /*let itemOne = Todo({item: 'buy flowers'}).save(function(err) {
   if(err) throw err;
